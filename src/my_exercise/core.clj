@@ -3,10 +3,12 @@
             [compojure.route :as route]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [ring.middleware.reload :refer [wrap-reload]]
-            [my-exercise.home :as home]))
+            [my-exercise.home :as home]
+            [my-exercise.elections :as elections]))
 
 (defroutes app
   (GET "/" [] home/page)
+  (POST "/search" {params :params} elections/search)
   (route/resources "/")
   (route/not-found "Not found"))
 
