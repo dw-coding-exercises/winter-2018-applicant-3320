@@ -7,10 +7,6 @@
 
 ;{:__anti-forgery-token +acmTxD5jnnhbmm1gGIkaMaSR3DnVOkz8rbjQ6Jg53vTBxDCrxHqIDTTOL/8JiWgxWmXAUAsxheflGZR, :street 123 Way, :street-2 , :city Nashville, :state TN, :zip 37011}
 
-
-; (defn search [& params])
-; this is our runner method... inside this one, we'll call all the other things?
-
 ; take these parameters and parse them into address components
 ; send components to an OCD/ID generator
 ; build API request
